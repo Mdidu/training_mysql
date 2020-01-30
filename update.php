@@ -1,5 +1,8 @@
 <?php
     include "connect.php";
+    include "check_login.php";
+
+    checking();
 
     if(!isset($_GET['id'])):
         echo "Inexistant";

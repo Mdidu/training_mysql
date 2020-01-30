@@ -1,5 +1,7 @@
 <?php
 include "connect.php";
+include "check_login.php";
+checking();
 
 if(isset($_POST['id'])){
     $id = $_POST['id'];

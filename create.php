@@ -1,3 +1,7 @@
+<?php
+    include "connect.php";
+    include "check_login.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,8 +50,7 @@
 </body>
 </html>
 <?php
-    include "connect.php";
-
+    checking();
     //Ajouter une randonnée
     if(!empty($_POST['name']) && !empty($_POST['difficulty']) && !empty($_POST['distance']) && !empty($_POST['duration']) && !empty($_POST['height_difference']) && !is_nan(floatval($_POST['distance'])) && !is_nan(floatval($_POST['duration'])) && !is_nan(floatval($_POST['height_difference']))){
 
